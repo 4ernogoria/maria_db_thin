@@ -1,7 +1,8 @@
-FROM 4ernogoria/mariadb_new_base
+FROM localhost/maria_base_lnk
 
 MAINTAINER SharxDC
-
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
 
 EXPOSE 3306
