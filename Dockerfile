@@ -1,4 +1,4 @@
-FROM base
+FROM base-db
 
 MAINTAINER SharxDC
 COPY entrypoint_new.sh /entrypoint.sh
